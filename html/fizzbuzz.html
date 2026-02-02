@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FizzBuzz</title>
+    <style>
+        body { font-family: monospace; padding: 20px; }
+        .fizz { color: green; }
+        .buzz { color: blue; }
+        .fizzbuzz { color: purple; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    <pre id="output"></pre>
+    <script>
+        let output = document.getElementById('output');
+        for (let i = 1; i <= 100; i++) {
+            let text = i;
+            let className = '';
+            if (i % 15 === 0) {
+                text = 'FizzBuzz';
+                className = 'fizzbuzz';
+            } else if (i % 3 === 0) {
+                text = 'Fizz';
+                className = 'fizz';
+            } else if (i % 5 === 0) {
+                text = 'Buzz';
+                className = 'buzz';
+            }
+            const span = document.createElement('span');
+            span.textContent = text + '\n';
+            if (className) span.className = className;
+            output.appendChild(span);
+        }
+    </script>
+</body>
+</html>
