@@ -1,0 +1,12 @@
+to fizzbuzz :n
+  ifelse 0 = modulo :n 15 [print "FizzBuzz] [
+    ifelse 0 = modulo :n 3 [print "Fizz] [
+      ifelse 0 = modulo :n 5 [print "Buzz] [print :n]
+    ]
+  ]
+end
+
+repeat 100 [
+  make "i repcount + 1
+  fizzbuzz :i
+]
