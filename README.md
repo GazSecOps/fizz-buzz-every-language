@@ -31,6 +31,8 @@ The program should do this for numbers 1 through 100.
 | Dart | dart/ | fizzbuzz.dart |
 | Crystal | crystal/ | fizzbuzz.cr |
 | Ruby | ruby/ | fizzbuzz.rb |
+| ActionScript | actionscript/ | fizzbuzz.as |
+| Haxe | haxe/ | fizzbuzz.hx |
 
 ### Compiled Systems Languages
 
@@ -45,9 +47,11 @@ The program should do this for numbers 1 through 100.
 | Odin | odin/ | fizzbuzz.odin |
 | Mojo | mojo/ | fizzbuzz.mojo |
 | Ada | ada/ | fizzbuzz.adb |
-| Fortran | fortran/ | fortran/fizzbuzz.f90 |
+| Fortran | fortran/ | fizzbuzz.f90 |
 | Pascal | pascal/ | fizzbuzz.pas |
 | Free Pascal | freepascal/ | fizzbuzz.pas |
+| Chapel | chapel/ | fizzbuzz.chpl |
+| ATS | ats/ | fizzbuzz.dats |
 
 ### Functional Languages
 
@@ -55,7 +59,7 @@ The program should do this for numbers 1 through 100.
 |----------|------------|------|
 | Haskell | haskell/ | fizzbuzz.hs |
 | OCaml | ocaml/ | fizzbuzz.ml |
-| F# | scala/fizzbuzz.fs | fizzbuzz.fs |
+| F# | fsharp/ | fizzbuzz.fs |
 | Scala | scala/ | FizzBuzz.scala |
 | Elm | elm/ | fizzbuzz.elm |
 | Idris2 | idris2/ | fizzbuzz.idr |
@@ -63,6 +67,7 @@ The program should do this for numbers 1 through 100.
 | ReScript | rescript/ | fizzbuzz.res |
 | Gleam | gleam/ | fizzbuzz.gleam |
 | Eiffel | eiffel/ | fizzbuzz.e |
+| Agda | agda/ | FizzBuzz.agda |
 
 ### Lisp Family
 
@@ -71,7 +76,7 @@ The program should do this for numbers 1 through 100.
 | Scheme | scheme/ | fizzbuzz.scm |
 | Racket | racket/ | fizzbuzz.rkt |
 | Clojure | clojure/ | fizzbuzz.clj |
-| Common Lisp | lisp/fizzbuzz.lisp | fizzbuzz.lisp |
+| Common Lisp | lisp/ | fizzbuzz.lisp |
 
 ### BEAM Languages (Erlang VM)
 
@@ -93,6 +98,8 @@ The program should do this for numbers 1 through 100.
 | Shell (Bash) | shell/ | fizzbuzz.sh |
 | Tcl | tcl/ | fizzbuzz.tcl |
 | REXX | rexx/ | fizzbuzz.rexx |
+| awk | awk/ | fizzbuzz.awk |
+| sed | sed/ | fizzbuzz.sed |
 
 ### Web & Framework Languages
 
@@ -101,6 +108,7 @@ The program should do this for numbers 1 through 100.
 | Groovy | groovy/ | fizzbuzz.groovy |
 | CoffeeScript | coffeescript/ | fizzbuzz.coffee |
 | TypeScript | typescript/ | fizzbuzz.ts |
+| LiveScript | livescript/ | fizzbuzz.ls |
 | Coconut | coconut/ | fizzbuzz.coco |
 
 ### Data Science & Scientific
@@ -119,6 +127,8 @@ The program should do this for numbers 1 through 100.
 | COBOL | cobol/ | fizzbuzz.cob |
 | BASIC | basic/ | fizzbuzz.bas |
 | XBase (Clipper/dBase) | xbase/ | fizzbuzz.prg |
+| Visual Basic | visualbasic/ | fizzbuzz.vb |
+| Yabasic | yabasic/ | fizzbuzz.yab |
 
 ### Parallel & Concurrent
 
@@ -139,8 +149,54 @@ The program should do this for numbers 1 through 100.
 |----------|------------|------|
 | Befunge | befunge/ | fizzbuzz.bf |
 | LOLCODE | lolcode/ | fizzbuzz.lol |
+| Malbolge | malbolge/ | README.txt |
 | Logo | logo/ | fizzbuzz.logo |
 | Factor | factor/ | fizzbuzz.factor |
+| Game of Life | gameoflife/ | fizzbuzz.rle |
+
+### Array Languages
+
+| Language | Directory | File |
+|----------|------------|------|
+| APL | apl/ | fizzbuzz.apl |
+| J | j/ | fizzbuzz.ijs |
+| K | k/ | fizzbuzz.k |
+
+### Database
+
+| Language | Directory | File |
+|----------|------------|------|
+| PostgreSQL | sql/postgres.sql | postgres.sql |
+| Oracle | sql/oracle.sql | oracle.sql |
+
+### System & DevOps
+
+| Language | Directory | File |
+|----------|------------|------|
+| PowerShell | powershell/ | fizzbuzz.ps1 |
+| Batch | batch/ | fizzbuzz.bat |
+| Makefile | make/ | Makefile |
+
+### Web Technologies
+
+| Language | Directory | File |
+|----------|------------|------|
+| HTML/CSS/JS | html/ | fizzbuzz.html |
+
+### Blockchain & Smart Contracts
+
+| Language | Directory | File |
+|----------|------------|------|
+| Cairo (StarkNet) | cairo/ | fizzbuzz.cairo |
+| Move (Aptos/Sui) | move/ | fizzbuzz.move |
+
+### Data Formats
+
+| Language | Directory | File |
+|----------|------------|------|
+| JSON | json/ | fizzbuzz.json |
+| XML | xml/ | fizzbuzz.xml |
+| YAML | yaml/ | fizzbuzz.yaml |
 
 ### Other
 
@@ -151,11 +207,9 @@ The program should do this for numbers 1 through 100.
 | Wren | wren/ | fizzbuzz.wren |
 | Prolog | prolog/ | fizzbuzz.pl |
 | Smalltalk | smalltalk/ | fizzbuzz.st |
-| ActionScript | FizzBuzz.as | FizzBuzz.as |
-| Haxe | FizzBuzz.hx | FizzBuzz.hx |
 | Euphoria | euphoria/ | fizzbuzz.ex |
 
-## Running the Code
+## Running Code
 
 Each implementation can be run independently. Most languages will need their compiler or interpreter installed.
 
@@ -174,6 +228,12 @@ rustc rust/fizzbuzz.rs
 
 # JavaScript
 node javascript/fizzbuzz.js
+
+# Bash
+bash shell/fizzbuzz.sh
+
+# PowerShell
+powershell powershell/fizzbuzz.ps1
 ```
 
 ## Contributing
@@ -184,12 +244,13 @@ Got a language that's missing? Send a pull request! Each implementation should:
 - Be readable and clear
 - Follow the same logic (1-100, FizzBuzz rules)
 - Be placed in a language-named directory
+- Follow the naming convention: `fizzbuzz.extension` (e.g., `fizzbuzz.go`, `fizzbuzz.py`)
 
 ## Statistics
 
-- **Total implementations:** 65+ languages
-- **Categories:** 11
-- **Commit count:** 73+
+- **Total implementations:** 85+ languages/formats
+- **Categories:** 17
+- **Commit count:** 80+
 
 ## License
 
