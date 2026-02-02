@@ -1,0 +1,8 @@
+: fizzbuzz dup 15 mod 0= if drop "FizzBuzz" cr else
+  dup 3 mod 0= if drop "Fizz" cr else
+  dup 5 mod 0= if drop "Buzz" cr else
+  . cr then then then ;
+
+: main 101 1 do i fizzbuzz loop ;
+
+main
