@@ -1,0 +1,15 @@
+for i in 1..100
+    putln(fizzbuzz(i))
+end
+
+function fizzbuzz(i as integer) as string
+    if i mod 15 = 0 then
+        return "FizzBuzz"
+    else if i mod 3 = 0 then
+        return "Fizz"
+    else if i mod 5 = 0 then
+        return "Buzz"
+    else
+        return str(i)
+    end if
+end function

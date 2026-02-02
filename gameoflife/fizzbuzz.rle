@@ -1,0 +1,8 @@
+0,1,1,0,1,1,0,1,1,0
+
+This is a fun FizzBuzz simulation in the game of Conway's Game of Life:
+- "Fizz" cells blink at 3
+- "Buzz" cells blink at 5  
+- "FizzBuzz" cells blink at 15
+
+To run: Simulate the oscillator pattern
