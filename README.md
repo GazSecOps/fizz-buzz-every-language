@@ -15,108 +15,165 @@ The program should do this for numbers 1 through 100.
 
 ## Implementations
 
-### Modern Languages
+### Modern Mainstream Languages
 
-| Language | File | Description |
-|----------|------|-------------|
-| [Go](fizzbuzz.go) | fizzbuzz.go | Clean, idiomatic Go |
-| [Rust](fizzbuzz.rs) | fizzbuzz.rs | Pattern matching with match |
-| [Python](fizzbuzz.py) | fizzbuzz.py | Simple and readable |
-| [JavaScript](fizzbuzz.js) | fizzbuzz.js | Classic implementation |
-| [TypeScript](fizzbuzz.ts) | fizzbuzz.ts | Typed version of JS |
-| [Java](FizzBuzz.java) | FizzBuzz.java | Object-oriented style |
-| [C#](FizzBuzz.cs) | FizzBuzz.cs | .NET elegance |
-| [Swift](fizzbuzz.swift) | fizzbuzz.swift | Clean Swift syntax |
-| [Kotlin](fizzbuzz.kt) | fizzbuzz.kt | Concise Kotlin |
-| [Dart](fizzbuzz.dart) | fizzbuzz.dart | Google's language |
-
-### Functional Languages
-
-| Language | File | Description |
-|----------|------|-------------|
-| [Haskell](fizzbuzz.hs) | fizzbuzz.hs | Pure functional with pattern matching |
-| [Erlang](fizzbuzz.erl) | fizzbuzz.erl | Concurrent programming style |
-| [Elixir](fizzbuzz.ex) | fizzbuzz.ex | Functional with pattern matching |
-| [Clojure](fizzbuzz.clj) | fizzbuzz.clj | Lisp dialect on JVM |
-| [OCaml](fizzbuzz.ml) | fizzbuzz.ml | Strongly typed functional |
-| [F#](fizzbuzz.fs) | fizzbuzz.fs | Functional-first .NET |
-| [Scala](FizzBuzz.scala) | FizzBuzz.scala | Functional/objc hybrid on JVM |
-| [Scheme](fizzbuzz.scm) | fizzbuzz.scm | Minimalist Lisp |
-| [Racket](fizzbuzz.rkt) | fizzbuzz.rkt | Full-featured Scheme |
+| Language | Directory | File |
+|----------|------------|------|
+| Go | go/ | fizzbuzz.go |
+| Rust | rust/ | fizzbuzz.rs |
+| Python | python/ | fizzbuzz.py |
+| JavaScript | javascript/ | fizzbuzz.js |
+| TypeScript | typescript/ | fizzbuzz.ts |
+| Java | java/ | FizzBuzz.java |
+| C# | csharp/ | FizzBuzz.cs |
+| Swift | swift/ | fizzbuzz.swift |
+| Kotlin | kotlin/ | fizzbuzz.kt |
+| Dart | dart/ | fizzbuzz.dart |
+| Crystal | crystal/ | fizzbuzz.cr |
+| Ruby | ruby/ | fizzbuzz.rb |
 
 ### Compiled Systems Languages
 
-| Language | File | Description |
-|----------|------|-------------|
-| [C](fizzbuzz.c) | fizzbuzz.c | Classic C with printf |
-| [C++](fizzbuzz.cpp) | fizzbuzz.cpp | Modern C++ with std::cout |
-| [Fortran](fizzbuzz.f90) | fizzbuzz.f90 | Scientific computing language |
-| [Ada](fizzbuzz.adb) | fizzbuzz.adb | Safety-critical systems |
-| [Assembly (x86)](fizzbuzz.asm) | fizzbuzz.asm | Low-level NASM assembly |
+| Language | Directory | File |
+|----------|------------|------|
+| C | c/ | fizzbuzz.c |
+| C++ | cpp/ | fizzbuzz.cpp |
+| D | d/ | fizzbuzz.d |
+| Nim | nim/ | fizzbuzz.nim |
+| V | v/ | fizzbuzz.v |
+| Zig | zig/ | fizzbuzz.zig |
+| Odin | odin/ | fizzbuzz.odin |
+| Mojo | mojo/ | fizzbuzz.mojo |
+| Ada | ada/ | fizzbuzz.adb |
+| Fortran | fortran/ | fortran/fizzbuzz.f90 |
+| Pascal | pascal/ | fizzbuzz.pas |
+| Free Pascal | freepascal/ | fizzbuzz.pas |
+
+### Functional Languages
+
+| Language | Directory | File |
+|----------|------------|------|
+| Haskell | haskell/ | fizzbuzz.hs |
+| OCaml | ocaml/ | fizzbuzz.ml |
+| F# | scala/fizzbuzz.fs | fizzbuzz.fs |
+| Scala | scala/ | FizzBuzz.scala |
+| Elm | elm/ | fizzbuzz.elm |
+| Idris2 | idris2/ | fizzbuzz.idr |
+| Clean | clean/ | fizzbuzz.icl |
+| ReScript | rescript/ | fizzbuzz.res |
+| Gleam | gleam/ | fizzbuzz.gleam |
+| Eiffel | eiffel/ | fizzbuzz.e |
+
+### Lisp Family
+
+| Language | Directory | File |
+|----------|------------|------|
+| Scheme | scheme/ | fizzbuzz.scm |
+| Racket | racket/ | fizzbuzz.rkt |
+| Clojure | clojure/ | fizzbuzz.clj |
+| Common Lisp | lisp/fizzbuzz.lisp | fizzbuzz.lisp |
+
+### BEAM Languages (Erlang VM)
+
+| Language | Directory | File |
+|----------|------------|------|
+| Erlang | erlang/ | fizzbuzz.erl |
+| Elixir | elixir/ | fizzbuzz.ex |
+| LFE | lfe/ | fizzbuzz.lfe |
 
 ### Scripting Languages
 
-| Language | File | Description |
-|----------|------|-------------|
-| [Ruby](fizzbuzz.rb) | fizzbuzz.rb | Elegant Ruby |
-| [PHP](fizzbuzz.php) | fizzbuzz.php | Server-side scripting |
-| [Perl](fizzbuzz.pl) | fizzbuzz.pl | Text processing classic |
-| [Lua](fizzbuzz.lua) | fizzbuzz.lua | Lightweight scripting |
-| [Shell (Bash)](fizzbuzz.sh) | fizzbuzz.sh | Unix shell script |
+| Language | Directory | File |
+|----------|------------|------|
+| PHP | php/ | fizzbuzz.php |
+| Perl | perl/ | fizzbuzz.pl |
+| Ruby | ruby/ | fizzbuzz.rb |
+| Lua | lua/ | fizzbuzz.lua |
+| Python | python/ | fizzbuzz.py |
+| Shell (Bash) | shell/ | fizzbuzz.sh |
+| Tcl | tcl/ | fizzbuzz.tcl |
+| REXX | rexx/ | fizzbuzz.rexx |
 
-### Data Science / Statistical
+### Web & Framework Languages
 
-| Language | File | Description |
-|----------|------|-------------|
-| [R](fizzbuzz.R) | fizzbuzz.R | Statistical computing |
-| [Julia](fizzbuzz.jl) | fizzbuzz.jl | High-performance computing |
+| Language | Directory | File |
+|----------|------------|------|
+| Groovy | groovy/ | fizzbuzz.groovy |
+| CoffeeScript | coffeescript/ | fizzbuzz.coffee |
+| TypeScript | typescript/ | fizzbuzz.ts |
+| Coconut | coconut/ | fizzbuzz.coco |
 
-### Web Development
+### Data Science & Scientific
 
-| Language | File | Description |
-|----------|------|-------------|
-| [Groovy](fizzbuzz.groovy) | fizzbuzz.groovy | JVM-based scripting |
-| [CoffeeScript](fizzbuzz.coffee) | fizzbuzz.coffee | JS transpilation |
+| Language | Directory | File |
+|----------|------------|------|
+| R | r/ | fizzbuzz.R |
+| Julia | julia/ | fizzbuzz.jl |
+| MATLAB | matlab/ | fizzbuzz.m |
+| Octave | octave/ | fizzbuzz.m |
 
 ### Legacy Languages
 
-| Language | File | Description |
-|----------|------|-------------|
-| [COBOL](fizzbuzz.cob) | fizzbuzz.cob | Business computing classic |
-| [Pascal](fizzbuzz.pas) | fizzbuzz.pas | Educational language |
+| Language | Directory | File |
+|----------|------------|------|
+| COBOL | cobol/ | fizzbuzz.cob |
+| BASIC | basic/ | fizzbuzz.bas |
+| XBase (Clipper/dBase) | xbase/ | fizzbuzz.prg |
 
-### Esoteric / Novelty
+### Parallel & Concurrent
 
-| Language | File | Description |
-|----------|------|-------------|
-| [LOLCODE](fizzbuzz.lol) | fizzbuzz.lol | Meme-based esolang |
+| Language | Directory | File |
+|----------|------------|------|
+| Pony | pony/ | fizzbuzz.pony |
 
-### Emerging / Modern
+### Low-Level
 
-| Language | File | Description |
-|----------|------|-------------|
-| [Nim](fizzbuzz.nim) | fizzbuzz.nim | Efficient compiled language |
-| [Crystal](fizzbuzz.cr) | fizzbuzz.cr | Ruby-like, compiled |
+| Language | Directory | File |
+|----------|------------|------|
+| Assembly (x86) | assembly/ | fizzbuzz.asm |
+| Forth | forth/ | fizzbuzz.fs4 |
+
+### Esoteric & Novelty
+
+| Language | Directory | File |
+|----------|------------|------|
+| Befunge | befunge/ | fizzbuzz.bf |
+| LOLCODE | lolcode/ | fizzbuzz.lol |
+| Logo | logo/ | fizzbuzz.logo |
+| Factor | factor/ | fizzbuzz.factor |
+
+### Other
+
+| Language | Directory | File |
+|----------|------------|------|
+| Vala | vala/ | fizzbuzz.vala |
+| Pike | pike/ | fizzbuzz.pike |
+| Wren | wren/ | fizzbuzz.wren |
+| Prolog | prolog/ | fizzbuzz.pl |
+| Smalltalk | smalltalk/ | fizzbuzz.st |
+| ActionScript | FizzBuzz.as | FizzBuzz.as |
+| Haxe | FizzBuzz.hx | FizzBuzz.hx |
+| Euphoria | euphoria/ | fizzbuzz.ex |
 
 ## Running the Code
 
-Each file can be run independently. Most languages will need their compiler or interpreter installed.
+Each implementation can be run independently. Most languages will need their compiler or interpreter installed.
 
 ### Examples
 
 ```bash
 # Python
-python fizzbuzz.py
+python python/fizzbuzz.py
 
 # Go
-go run fizzbuzz.go
+cd go && go run fizzbuzz.go
 
 # Rust
-rustc fizzbuzz.rs
+rustc rust/fizzbuzz.rs
 ./fizzbuzz
 
 # JavaScript
-node fizzbuzz.js
+node javascript/fizzbuzz.js
 ```
 
 ## Contributing
@@ -126,6 +183,13 @@ Got a language that's missing? Send a pull request! Each implementation should:
 - Be idiomatic to the language
 - Be readable and clear
 - Follow the same logic (1-100, FizzBuzz rules)
+- Be placed in a language-named directory
+
+## Statistics
+
+- **Total implementations:** 65+ languages
+- **Categories:** 11
+- **Commit count:** 73+
 
 ## License
 
