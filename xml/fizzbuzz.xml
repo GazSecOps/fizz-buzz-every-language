@@ -1,0 +1,12 @@
+<root>
+  <fizzbuzz>
+    <item number="1">1</item>
+    <item number="2">2</item>
+    <item number="3">Fizz</item>
+    <item number="4">4</item>
+    <item number="5">Buzz</item>
+    <item number="15">FizzBuzz</item>
+    <item number="30">FizzBuzz</item>
+    <item number="100">Buzz</item>
+  </fizzbuzz>
+</root>

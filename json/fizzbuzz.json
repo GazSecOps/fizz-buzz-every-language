@@ -1,0 +1,13 @@
+{
+  "fizzbuzz": [
+    {"n": 1, "result": 1},
+    {"n": 2, "result": 2},
+    {"n": 3, "result": "Fizz"},
+    {"n": 4, "result": 4},
+    {"n": 5, "result": "Buzz"},
+    {"n": 6, "result": "Fizz"},
+    {"n": 15, "result": "FizzBuzz"},
+    {"n": 30, "result": "FizzBuzz"},
+    {"n": 100, "result": "Buzz"}
+  ]
+}
