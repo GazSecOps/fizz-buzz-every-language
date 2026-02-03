@@ -33,6 +33,7 @@ The program should do this for numbers 1 through 100.
 | Ruby | ruby/ | fizzbuzz.rb |
 | ActionScript | actionscript/ | fizzbuzz.as |
 | Haxe | haxe/ | fizzbuzz.hx |
+| GDScript (Godot) | gdscript/ | fizzbuzz.gd |
 
 ### Compiled Systems Languages
 
@@ -96,6 +97,7 @@ The program should do this for numbers 1 through 100.
 | Lua | lua/ | fizzbuzz.lua |
 | Python | python/ | fizzbuzz.py |
 | Shell (Bash) | shell/ | fizzbuzz.sh |
+| zsh | zsh/ | fizzbuzz.zsh |
 | Tcl | tcl/ | fizzbuzz.tcl |
 | REXX | rexx/ | fizzbuzz.rexx |
 | awk | awk/ | fizzbuzz.awk |
@@ -147,11 +149,12 @@ The program should do this for numbers 1 through 100.
 
 | Language | Directory | File |
 |----------|------------|------|
-| Befunge | befunge/ | fizzbuzz.bf |
+| Befunge | befunge/ | fizzbuzz.bef |
 | LOLCODE | lolcode/ | fizzbuzz.lol |
 | Malbolge | malbolge/ | README.txt |
 | Logo | logo/ | fizzbuzz.logo |
 | Factor | factor/ | fizzbuzz.factor |
+| Brainfuck | brainfuck/ | README.md |
 | Game of Life | gameoflife/ | fizzbuzz.rle |
 
 ### Array Languages
@@ -176,6 +179,13 @@ The program should do this for numbers 1 through 100.
 | PowerShell | powershell/ | fizzbuzz.ps1 |
 | Batch | batch/ | fizzbuzz.bat |
 | Makefile | make/ | Makefile |
+| CMake | cmake/ | CMakeLists.txt |
+| Nix | nix/ | fizzbuzz.nix |
+| Ansible | ansible/ | fizzbuzz.yml |
+| Terraform | terraform/ | fizzbuzz.tf |
+| OpenTofu | opentofu/ | fizzbuzz.tofu |
+| Docker | docker/ | fizzbuzz.dockerfile |
+| Kubernetes | kubernetes/ | fizzbuzz.yaml |
 
 ### Web Technologies
 
@@ -189,6 +199,8 @@ The program should do this for numbers 1 through 100.
 |----------|------------|------|
 | Cairo (StarkNet) | cairo/ | fizzbuzz.cairo |
 | Move (Aptos/Sui) | move/ | fizzbuzz.move |
+| Solidity (Ethereum) | solidity/ | fizzbuzz.sol |
+| Solana | solana/ | fizzbuzz.rs |
 
 ### Data Formats
 
@@ -197,6 +209,28 @@ The program should do this for numbers 1 through 100.
 | JSON | json/ | fizzbuzz.json |
 | XML | xml/ | fizzbuzz.xml |
 | YAML | yaml/ | fizzbuzz.yaml |
+| TOML | toml/ | fizzbuzz.toml |
+| INI | ini/ | fizzbuzz.ini |
+| CSV | csv/ | fizzbuzz.csv |
+
+### API & Schema
+
+| Language | Directory | File |
+|----------|------------|------|
+| GraphQL | graphql/ | schema.graphql |
+| Protocol Buffers | protobuf/ | fizzbuzz.proto |
+
+### Hardware Description
+
+| Language | Directory | File |
+|----------|------------|------|
+| VHDL | vhdl/ | fizzbuzz.vhd |
+
+### Documentation
+
+| Language | Directory | File |
+|----------|------------|------|
+| LaTeX | latex/ | fizzbuzz.tex |
 
 ### Other
 
@@ -209,7 +243,7 @@ The program should do this for numbers 1 through 100.
 | Smalltalk | smalltalk/ | fizzbuzz.st |
 | Euphoria | euphoria/ | fizzbuzz.ex |
 
-## Running Code
+## Running the Code
 
 Each implementation can be run independently. Most languages will need their compiler or interpreter installed.
 
@@ -232,8 +266,17 @@ node javascript/fizzbuzz.js
 # Bash
 bash shell/fizzbuzz.sh
 
-# PowerShell
-powershell powershell/fizzbuzz.ps1
+# Docker
+docker build -t fizzbuzz docker/ && docker run fizzbuzz
+
+# Kubernetes
+kubectl apply -f kubernetes/fizzbuzz.yaml
+
+# Terraform
+terraform apply terraform/
+
+# Nix
+nix-build nix/fizzbuzz.nix
 ```
 
 ## Contributing
@@ -248,9 +291,10 @@ Got a language that's missing? Send a pull request! Each implementation should:
 
 ## Statistics
 
-- **Total implementations:** 85+ languages/formats
-- **Categories:** 17
-- **Commit count:** 80+
+- **Total implementations:** 115+ languages/formats/tools
+- **Categories:** 22
+- **Directories:** 112+
+- **Commit count:** 85+
 
 ## License
 
