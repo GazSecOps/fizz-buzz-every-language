@@ -1,0 +1,14 @@
+# GraphQL FizzBuzz Query
+
+query GetFizzBuzz($min: Int = 1, $max: Int! = 100) {
+  fizzbuzz(range: { min: $min, max: $max }) {
+    n
+    result
+  }
+}
+
+# Variables:
+# {
+#   "min": 1,
+#   "max": 100
+# }

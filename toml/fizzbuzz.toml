@@ -1,0 +1,40 @@
+# TOML FizzBuzz data
+
+[fizzbuzz]
+description = "FizzBuzz numbers 1-100 in TOML format"
+
+[[fizzbuzz.items]]
+n = 1
+result = 1
+
+[[fizzbuzz.items]]
+n = 2
+result = 2
+
+[[fizzbuzz.items]]
+n = 3
+result = "Fizz"
+
+[[fizzbuzz.items]]
+n = 4
+result = 4
+
+[[fizzbuzz.items]]
+n = 5
+result = "Buzz"
+
+[[fizzbuzz.items]]
+n = 6
+result = "Fizz"
+
+[[fizzbuzz.items]]
+n = 15
+result = "FizzBuzz"
+
+[[fizzbuzz.items]]
+n = 30
+result = "FizzBuzz"
+
+[[fizzbuzz.items]]
+n = 100
+result = "Buzz"

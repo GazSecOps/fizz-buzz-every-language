@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package fizzbuzz;
+
+message FizzBuzzResult {
+  uint32 n = 1;
+  string result = 2;
+}
+
+message FizzBuzzRequest {
+  uint32 min = 1;
+  uint32 max = 2;
+}
+
+message FizzBuzzResponse {
+  repeated FizzBuzzResult results = 1;
+}
+
+service FizzBuzzService {
+  rpc GetFizzBuzz(FizzBuzzRequest) returns (FizzBuzzResponse);
+}

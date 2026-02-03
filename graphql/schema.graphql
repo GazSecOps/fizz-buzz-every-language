@@ -1,0 +1,15 @@
+# GraphQL FizzBuzz Schema
+
+type Query {
+  fizzbuzz(range: FizzBuzzRange!): [FizzBuzzResult!]!
+}
+
+input FizzBuzzRange {
+  min: Int = 1
+  max: Int! = 100
+}
+
+type FizzBuzzResult {
+  n: Int!
+  result: String!
+}

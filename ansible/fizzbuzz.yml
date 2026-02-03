@@ -1,0 +1,39 @@
+---
+# Ansible FizzBuzz
+# Execute FizzBuzz on target hosts
+
+- name: Run FizzBuzz
+  hosts: localhost
+  gather_facts: false
+  vars:
+    range: "{{ range(1, 101) | list }}"
+
+  tasks:
+    - name: Print FizzBuzz numbers 1-100
+      ansible.builtin.debug:
+        msg: >-
+          {% for i in range %}
+          {% if i % 15 == 0 %}FizzBuzz
+          {% elif i % 3 == 0 %}Fizz
+          {% elif i % 5 == 0 %}Buzz
+          {% else %}{{ i }}{% endif %}
+
+    - name: Alternative: Execute shell command
+      ansible.builtin.shell: |
+        for i in {1..100}; do
+          if (( i % 15 == 0 )); then
+            echo "FizzBuzz"
+          elif (( i % 3 == 0 )); then
+            echo "Fizz"
+          elif (( i % 5 == 0 )); then
+            echo "Buzz"
+          else
+            echo $i
+          fi
+        done
+      register: fizzbuzz_output
+      changed_when: false
+
+    - name: Display FizzBuzz results
+      ansible.builtin.debug:
+        var: fizzbuzz_output.stdout_lines
